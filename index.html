@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body ng-controller="myCtrl">
+		<input ng-model="userName"/>
+		{{userName}}
+	</body>
+	<script src="libs/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app =angular.module("myApp",[]);
+		app.controller("myCtrl",function($scope){
+			$scope.userName="zzl611";
+		})
+	</script>
+</html>

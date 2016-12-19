@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body ng-controller="myCtrl">
+	     {{user.userName+"的老婆是"+user.objName}}
+	</body>
+	<script src="libs/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app =angular.module("myApp",[]);
+		app.controller("myCtrl",function($scope){
+			$scope.user={
+				"userName":"隔壁老王",
+				"weight":"250KG",
+				"height":"250mm",
+				"obj":true,
+				"objName":"小明"
+			}
+		})
+	</script>
+</html>
